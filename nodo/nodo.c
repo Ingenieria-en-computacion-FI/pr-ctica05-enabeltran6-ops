@@ -3,10 +3,11 @@
 
 Nodo* nodo_crear(int dato)
 {
-    Nodo* n=(Nodo*)malloc (sieof(Nodo))
-    // Todo: implementar la función }
-if(n==NULL){
-    return NULL;
+    Nodo* NewNode = (Nodo*)malloc(sizeof(Nodo));
+    if (NewNode != NULL){
+        NewNode -> dato = dato;
+        NewNode -> siguiente = NULL;
+    } return NewNode;
 }
     
 void nodo_destruir(Nodo* nodo)
